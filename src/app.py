@@ -23,7 +23,7 @@ ENV = "development" if os.getenv("FLASK_DEBUG") == "1" else "production"
 static_file_dir = os.path.join(os.path.dirname(
     os.path.realpath(__file__)), '../public/')
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://fuzzy-space-barnacle-rjw954q656phxgx5-3000.app.github.dev"}}, supports_credentials=True)
+CORS(app, resources={r"/api/*": {"origins": "https://improved-meme-q5776xvr5grh9r6g-3000.app.github.dev"}}, supports_credentials=True)
 app.url_map.strict_slashes = False
 
 # database condiguration
@@ -34,7 +34,7 @@ if db_url is not None:
 else:
     app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:////tmp/test.db"
 
-app.config["JWT_SECRET_KEY"] = "La super mega Encriptacion de Jose, el secreto mejor guardado del mundo."
+app.config["JWT_SECRET_KEY"] = "La Encriptacion "
 jwt = JWTManager(app)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -50,7 +50,7 @@ setup_commands(app)
 # Add all endpoints form the API with a "api" prefix
 app.register_blueprint(api, url_prefix='/api')
 
-CORS(app, resources={r"/api/*": {"origins": "https://fuzzy-space-barnacle-rjw954q656phxgx5-3000.app.github.dev"}}, supports_credentials=True)
+CORS(app, resources={r"/api/*": {"origins": "https://improved-meme-q5776xvr5grh9r6g-3000.app.github.dev"}}, supports_credentials=True)
 # Handle/serialize errors like a JSON object
 
 

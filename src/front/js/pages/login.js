@@ -23,7 +23,7 @@ export const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("https://fuzzy-space-barnacle-rjw954q656phxgx5-3001.app.github.dev/login", {
+            const response = await fetch("https://improved-meme-q5776xvr5grh9r6g-3001.app.github.dev/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
