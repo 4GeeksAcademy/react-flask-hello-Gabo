@@ -9,7 +9,7 @@ export const Home = () => {
 
 	return (
 		<div className="text-center mt-5">
-			<h1>Bienvenido a la API de Usuarios</h1>
+			<h1>Bienvenido </h1>
 
 			<p>
 				<img style={{width:"200px"}} src={rigoImageUrl} />
